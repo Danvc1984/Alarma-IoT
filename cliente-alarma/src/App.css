@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lato&family=Share+Tech+Mono&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.Reloj {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 4rem;
+}
+h1 {
+  font-family: "Bangers", cursive;
+  font-weight: 300;
+  box-shadow: 3px 4px 0px 0px #129fce;
+  color: #0a5068;
+}
+
+.flex {
+  margin: 2em;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+button,
+input,
+label {
+  margin: 0.8em;
+  font-size: large;
+}
+.flex section {
+  flex-flow: row;
+  justify-content: space-between;
+}
+.boton {
+  box-shadow: 3px 4px 0px 0px #899599;
+  background-color: #ededed;
+  border-radius: 5px;
+
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 14px 26px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
+}
+.boton:active {
+  position: relative;
+  top: 2px;
+}
+#set {
+  color: #129fce;
+  border: 1px solid #25a9d4;
+}
+
+#cancel {
+  color: #75380e;
+  border: 1px solid #703e1c;
+}
+
+input {
+  border-color: #75380e;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/*=== Basic box styling  ===*/
+.box {
+  background: #23a3d3;
+  padding: 18px;
+  text-align: center;
+  color: white;
+  border-radius: 7px;
+  margin: 1.2em;
+  font-family: "helvetica";
+  text-transform: uppercase;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
